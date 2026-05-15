@@ -2,6 +2,7 @@ package net.jivin.firstmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jivin.firstmod.FirstMod;
+import net.jivin.firstmod.block.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -22,5 +23,11 @@ public class ModItems {
             entries.add(PINK_GARNET);
             entries.add(RAW_PINK_GARNET);
         });;
+    }
+    public static void registerModBlocks(){
+        FirstMod.LOGGER.info("Registering mod blocks");
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->{
+            entries.add(ModBlocks.PINK_GARNET_BLOCK);
+        });
     }
 }

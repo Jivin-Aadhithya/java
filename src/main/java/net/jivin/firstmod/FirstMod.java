@@ -1,6 +1,7 @@
 package net.jivin.firstmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.jivin.firstmod.block.ModBlocks;
 import net.jivin.firstmod.item.ModItems;
 
 import org.slf4j.Logger;
@@ -17,7 +18,6 @@ public class FirstMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
-
-		LOGGER.info("Hello Fabric world!");
+		ModBlocks.registerModBlocks();
 	}
 }
