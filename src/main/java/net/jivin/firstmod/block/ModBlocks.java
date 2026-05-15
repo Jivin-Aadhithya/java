@@ -36,7 +36,8 @@ public class ModBlocks {
         FirstMod.LOGGER.info("Registering Mod Blocks for " + FirstMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.PINK_GARNET_BLOCK);
+            entries.add(PINK_GARNET_BLOCK);
+            entries.add(RAW_PINK_GARNET_BLOCK);
         });
     }
 }
