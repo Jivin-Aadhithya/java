@@ -22,7 +22,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
             entries.add(RAW_PINK_GARNET);
-        });;
+        });
     }
     public static void registerModBlocks(){
         FirstMod.LOGGER.info("Registering mod blocks");
