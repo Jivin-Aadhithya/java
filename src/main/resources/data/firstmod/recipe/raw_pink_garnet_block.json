@@ -1,0 +1,17 @@
+{
+    "type" : "crafting_shaped",
+    "category" : "building",
+    "key" : {
+        "#" : {
+            "item" : "firstmod:raw_pink_garnet"
+        }
+    },
+    "pattern" : [
+        "###",
+        "###",
+        "###"
+    ],
+    "result" : {
+        "id" : "firstmod:raw_pink_garnet_block"
+    }
+}
